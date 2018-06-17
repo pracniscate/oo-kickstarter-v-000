@@ -10,6 +10,6 @@ class Project
     # store the Backer argument in a backers array
     @backers << backer
     # also add the project to the backer's backed_projects array
-    backers.backed_projects << self
+    backer.backed_projects << self
   end
 end
