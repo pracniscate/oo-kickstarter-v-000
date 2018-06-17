@@ -9,5 +9,7 @@ class Backer
   def back_project(project)
     # store the project argument in a backed_projects array
     @backed_projects << project
+    # also add the backer to the project's backers array 
+    project.backer << backer
   end
 end
